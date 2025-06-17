@@ -1,11 +1,5 @@
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\bin\Debug\net8.0\Irisbond2Tolt.deps.json
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\bin\Debug\net8.0\Irisbond2Tolt.dll
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\bin\Debug\net8.0\Irisbond2Tolt.pdb
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.AssemblyInfoInputs.cache
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.AssemblyInfo.cs
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.csproj.CoreCompileInputs.cache
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.dll
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\refint\Irisbond2Tolt.dll
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.pdb
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\ref\Irisbond2Tolt.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\obj\Debug\net8.0\Irisbond2Tolt.sourcelink.json

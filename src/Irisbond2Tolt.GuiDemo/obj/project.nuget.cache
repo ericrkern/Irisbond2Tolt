@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rkl8dnKJyq0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SMF_A\\Documents\\irisbond2tolt\\Irisbond2Tolt\\src\\Irisbond2Tolt.GuiDemo\\Irisbond2Tolt.GuiDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SMF_A\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.6\\microsoft.win32.systemevents.9.0.6.nupkg.sha512",
+    "C:\\Users\\SMF_A\\.nuget\\packages\\system.drawing.common\\9.0.6\\system.drawing.common.9.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

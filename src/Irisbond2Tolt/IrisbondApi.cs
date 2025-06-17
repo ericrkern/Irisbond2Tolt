@@ -1,4 +1,5 @@
 using System;
+using IrisbondAPI; // Reference to the official Irisbond C# API wrapper
 
 namespace Irisbond2Tolt
 {
@@ -25,7 +26,8 @@ namespace Irisbond2Tolt
     }
 
     /// <summary>
-    /// Basic implementation of the Irisbond Hiro API interface.
+    /// Implementation of the Irisbond Hiro API interface using the official SDK.
+    /// Requires IrisbondHiruAPI.dll and PGRFlyCapture.dll to be present in the output directory.
     /// </summary>
     public class IrisbondApi : IIrisbondApi
     {
@@ -33,26 +35,42 @@ namespace Irisbond2Tolt
 
         public bool Connect()
         {
-            // TODO: Implement connection logic to Irisbond Hiro device
-            connected = true;
+            // Check if the tracker is present and start the API
+            if (!IrisbondHiru.trackerIsPresent())
+                return false;
+            var status = IrisbondHiru.start();
+            connected = (status == START_STATUS.START_OK);
             return connected;
         }
 
         public void Disconnect()
         {
-            // TODO: Implement disconnection logic
-            connected = false;
+            if (connected)
+            {
+                IrisbondHiru.stop();
+                connected = false;
+            }
         }
 
         public bool Calibrate()
         {
-            // TODO: Implement calibration logic
-            return true;
+            if (!connected)
+                return false;
+            // Start a 5-point calibration and wait for it to finish (timeout 2 minutes)
+            IrisbondHiru.startCalibration(5);
+            var result = CALIBRATION_STATUS.CALIBRATION_FINISHED;
+            try
+            {
+                result = IrisbondHiru.waitForCalibrationToEnd(2);
+            }
+            catch { return false; }
+            return result == CALIBRATION_STATUS.CALIBRATION_FINISHED;
         }
 
         public GazeData GetGazeData()
         {
-            // TODO: Implement gaze data retrieval logic
+            // This is a placeholder. Actual gaze data requires setting up a callback in the SDK.
+            // For a real implementation, you would subscribe to the data callback and update a field.
             return new GazeData
             {
                 X = 0.0,
