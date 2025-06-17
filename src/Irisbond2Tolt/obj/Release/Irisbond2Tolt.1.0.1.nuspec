@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Irisbond2Tolt</id>
+    <version>1.0.1</version>
+    <authors>Irisbond2Tolt</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="6be1da86d2c2241f91ec0c5b1012627168b11053" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt\bin\Release\net8.0-windows\Irisbond2Tolt.dll" target="lib\net8.0-windows7.0\Irisbond2Tolt.dll" />
+  </files>
+</package>

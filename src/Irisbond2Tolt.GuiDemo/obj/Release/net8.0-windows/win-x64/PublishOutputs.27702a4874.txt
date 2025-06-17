@@ -1,0 +1,11 @@
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.GuiDemo.exe
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\ScottMorganFoundationLogo.png
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.GuiDemo.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.GuiDemo.deps.json
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.GuiDemo.runtimeconfig.json
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.GuiDemo.pdb
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Microsoft.Win32.SystemEvents.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\System.Drawing.Common.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\System.Private.Windows.Core.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.pdb

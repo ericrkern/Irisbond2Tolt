@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "G4SmyRYKlSs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SMF_A\\Documents\\irisbond2tolt\\Irisbond2Tolt\\src\\Irisbond2Tolt.HIDSharpDemo\\Irisbond2Tolt.HIDSharpDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SMF_A\\.nuget\\packages\\hidsharp\\2.1.0\\hidsharp.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

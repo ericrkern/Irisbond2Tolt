@@ -1,0 +1,3 @@
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.dll
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.deps.json
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\publish\Irisbond2Tolt\Irisbond2Tolt.pdb

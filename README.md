@@ -2,7 +2,7 @@
 
 # Irisbond2Tolt
 
-**Version:** 1.0.0 (Build 3)
+**Version:** 1.0.1 (Build 1)
 
 Adds support for the Irisbond Hiro eye tracker to the Tolt Ability Drive system.
 
@@ -107,4 +107,10 @@ EasyClick is Irisbond's eye gaze access software for Windows. It allows users to
 
 This project is supported by and gives special thanks to [The Scott-Morgan Foundation](https://www.scottmorganfoundation.org/) for their vision, support, and contributions to assistive technology and inclusive innovation.
 
-[https://www.scottmorganfoundation.org/](https://www.scottmorganfoundation.org/) 
+[https://www.scottmorganfoundation.org/](https://www.scottmorganfoundation.org/)
+
+## Download
+
+You can download the latest published install package here:
+
+[Download Irisbond2Tolt v1.0.1 (Build 1) - ZIP](https://github.com/ericrkern/Irisbond2Tolt/raw/main/publish/Irisbond2Tolt.zip) 

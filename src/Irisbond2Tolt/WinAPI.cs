@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace IrisbondAPI
 {
-    class WinAPI
+    public class WinAPI
     {
         #region Mouse
 

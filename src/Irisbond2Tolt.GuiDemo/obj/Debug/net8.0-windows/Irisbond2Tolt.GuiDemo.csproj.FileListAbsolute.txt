@@ -1,9 +1,3 @@
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo.csproj.AssemblyReference.cache
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo_Content.g.cs
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo_MarkupCompile.cache
-C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo_MarkupCompile.lref
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\bin\Debug\net8.0-windows\ScottMorganFoundationLogo.png
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\bin\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo.exe
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\bin\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo.deps.json
@@ -16,6 +10,12 @@ C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\b
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\bin\Debug\net8.0-windows\Irisbond2Tolt.dll
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\bin\Debug\net8.0-windows\Irisbond2Tolt.pdb
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo.csproj.AssemblyReference.cache
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo_Content.g.cs
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo_MarkupCompile.cache
+C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo_MarkupCompile.lref
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo.g.resources
 C:\Users\SMF_A\Documents\irisbond2tolt\Irisbond2Tolt\src\Irisbond2Tolt.GuiDemo\obj\Debug\net8.0-windows\Irisbond2Tolt.GuiDemo.GeneratedMSBuildEditorConfig.editorconfig

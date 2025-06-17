@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {},
+    ".NETCoreApp,Version=v8.0/win-x64": {
+      "Irisbond2Tolt.GuiDemo/1.0.0": {
+        "dependencies": {
+          "Irisbond2Tolt": "1.0.0",
+          "System.Drawing.Common": "9.0.6"
+        },
+        "runtime": {
+          "Irisbond2Tolt.GuiDemo.dll": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/9.0.6": {
+        "runtime": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
+      "System.Drawing.Common/9.0.6": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "9.0.6"
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26605"
+          },
+          "lib/net8.0/System.Private.Windows.Core.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.625.26605"
+          }
+        }
+      },
+      "Irisbond2Tolt/1.0.0": {
+        "runtime": {
+          "Irisbond2Tolt.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.3"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Irisbond2Tolt.GuiDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Win32.SystemEvents/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mUa3Chovao0xQ74j2hUN5kDTn3luY/1e9usJYT0r51cgqfQsgQu5C8Cis9h65SNRbkbBwErfXKlBtHCkMiYa/g==",
+      "path": "microsoft.win32.systemevents/9.0.6",
+      "hashPath": "microsoft.win32.systemevents.9.0.6.nupkg.sha512"
+    },
+    "System.Drawing.Common/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KpPB6e7PYCalslhmq/dVa2tJgCcfUDhEK83j1Eix+BmEcNPP00JJBvFrBT7jGcHLmQzsIA4AthwNFkk+cD3RKA==",
+      "path": "system.drawing.common/9.0.6",
+      "hashPath": "system.drawing.common.9.0.6.nupkg.sha512"
+    },
+    "Irisbond2Tolt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -32,14 +32,34 @@ namespace Irisbond2Tolt
     public class IrisbondApi : IIrisbondApi
     {
         private bool connected = false;
+        private GazeData _latestGazeData = new GazeData();
+        private bool _callbackSet = false;
 
         public bool Connect()
         {
-            // Check if the tracker is present and start the API
+            // Check if the tracker hardware is present
             if (!IrisbondHiru.trackerIsPresent())
                 return false;
-            var status = IrisbondHiru.start();
-            connected = (status == START_STATUS.START_OK);
+            // Check if the tracker is reachable (0 = OK)
+            int connStatus = IrisbondHiru.checkTrackerConnection();
+            if (connStatus != 0)
+                return false;
+            // Only call start if not already started
+            if (!connected)
+            {
+                var status = IrisbondHiru.start();
+                connected = (status == START_STATUS.START_OK);
+            }
+            else
+            {
+                connected = true;
+            }
+            // Set up the gaze data callback once
+            if (!_callbackSet)
+            {
+                IrisbondHiru.setDataCallback(OnGazeData);
+                _callbackSet = true;
+            }
             return connected;
         }
 
@@ -69,16 +89,38 @@ namespace Irisbond2Tolt
 
         public GazeData GetGazeData()
         {
-            // This is a placeholder. Actual gaze data requires setting up a callback in the SDK.
-            // For a real implementation, you would subscribe to the data callback and update a field.
-            return new GazeData
-            {
-                X = 0.0,
-                Y = 0.0,
-                Timestamp = DateTime.Now
-            };
+            return _latestGazeData;
         }
 
         public bool IsConnected => connected;
+
+        // Callback for real gaze data
+        private void OnGazeData(
+            long timestamp,
+            float mouseX,
+            float mouseY,
+            float mouseRawX,
+            float mouseRawY,
+            int screenWidth,
+            int screenHeight,
+            bool leftEyeDetected,
+            bool rightEyeDetected,
+            int imageWidth,
+            int imageHeight,
+            float leftEyeX,
+            float leftEyeY,
+            float leftEyeSize,
+            float rightEyeX,
+            float rightEyeY,
+            float rightEyeSize,
+            float distanceFactor)
+        {
+            _latestGazeData = new GazeData
+            {
+                X = mouseX,
+                Y = mouseY,
+                Timestamp = DateTimeOffset.FromUnixTimeMilliseconds(timestamp).DateTime
+            };
+        }
     }
 } 

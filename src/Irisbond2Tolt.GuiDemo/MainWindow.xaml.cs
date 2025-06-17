@@ -11,6 +11,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using IrisbondAPI;
 
 namespace Irisbond2Tolt.GuiDemo;
 
@@ -20,26 +22,59 @@ namespace Irisbond2Tolt.GuiDemo;
 public partial class MainWindow : Window
 {
     private CancellationTokenSource? _gazeCts;
+    private IrisbondApi _irisbond; // Shared instance
+    private bool _eyeGazeMouseEnabled = true;
 
     public MainWindow()
     {
         _gazeCts = null;
+        _irisbond = new IrisbondApi();
         GenerateBanner.CreateBanner();
         InitializeComponent();
+        this.KeyDown += MainWindow_KeyDown;
+        this.PreviewKeyDown += MainWindow_KeyDown;
+        UpdateTitle();
+    }
+
+    private void MainWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+    {
+        if (e.Key == Key.E && (Keyboard.Modifiers & ModifierKeys.Alt) == ModifierKeys.Alt)
+        {
+            _eyeGazeMouseEnabled = !_eyeGazeMouseEnabled;
+            UpdateTitle();
+            e.Handled = true;
+        }
+    }
+
+    private void UpdateTitle()
+    {
+        this.Title = _eyeGazeMouseEnabled ? "Irisbond2Tolt GUI Demo (Eye Gaze Mouse: ON)" : "Irisbond2Tolt GUI Demo (Eye Gaze Mouse: OFF)";
     }
 
     private void TestIrisbondButton_Click(object sender, RoutedEventArgs e)
     {
-        var sb = new StringBuilder();
-        var irisbond = new IrisbondApi();
-        sb.AppendLine($"IrisbondApi Connected: {irisbond.Connect()}");
-        sb.AppendLine($"IrisbondApi IsConnected: {irisbond.IsConnected}");
-        sb.AppendLine($"IrisbondApi Calibrate: {irisbond.Calibrate()}");
-        var gaze = irisbond.GetGazeData();
-        sb.AppendLine($"Gaze Data: X={gaze.X}, Y={gaze.Y}, Timestamp={gaze.Timestamp}");
-        irisbond.Disconnect();
-        sb.AppendLine($"IrisbondApi IsConnected after disconnect: {irisbond.IsConnected}");
-        OutputText.Text = sb.ToString();
+        try
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine($"IrisbondApi IsConnected (before): {_irisbond.IsConnected}");
+            if (!_irisbond.IsConnected)
+            {
+                sb.AppendLine($"IrisbondApi Connect(): {_irisbond.Connect()}");
+            }
+            else
+            {
+                sb.AppendLine("IrisbondApi already connected.");
+            }
+            sb.AppendLine($"IrisbondApi IsConnected (after): {_irisbond.IsConnected}");
+            sb.AppendLine($"IrisbondApi Calibrate: {_irisbond.Calibrate()}");
+            var gaze = _irisbond.GetGazeData();
+            sb.AppendLine($"Gaze Data: X={gaze.X}, Y={gaze.Y}, Timestamp={gaze.Timestamp}");
+            OutputText.Text = sb.ToString();
+        }
+        catch (Exception ex)
+        {
+            OutputText.Text = $"Exception: {ex.Message}\n{ex.StackTrace}";
+        }
     }
 
     private void TestToltButton_Click(object sender, RoutedEventArgs e)
@@ -64,24 +99,30 @@ public partial class MainWindow : Window
         if (_gazeCts != null)
             return;
         _gazeCts = new CancellationTokenSource();
-        var irisbond = new IrisbondApi();
-        irisbond.Connect();
+        _irisbond.Connect();
         LiveGazeStream.Text = "";
         Task.Run(() =>
         {
             while (!_gazeCts.IsCancellationRequested)
             {
-                var gaze = irisbond.GetGazeData();
+                var gaze = _irisbond.GetGazeData();
                 var line = $"Gaze Data: X={gaze.X}, Y={gaze.Y}, Timestamp={gaze.Timestamp:O}\n";
                 Dispatcher.Invoke(() =>
                 {
                     LiveGazeStream.Text += line;
                     if (LiveGazeStream.Text.Length > 5000)
                         LiveGazeStream.Text = LiveGazeStream.Text.Substring(LiveGazeStream.Text.Length - 5000);
+                    // Move mouse pointer to gaze location if enabled
+                    if (_eyeGazeMouseEnabled)
+                    {
+                        int screenX = (int)gaze.X;
+                        int screenY = (int)gaze.Y;
+                        WinAPI.SetCursorPos(screenX, screenY);
+                    }
                 });
                 Thread.Sleep(50);
             }
-            irisbond.Disconnect();
+            _irisbond.Disconnect();
         }, _gazeCts.Token);
     }
 
