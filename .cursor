@@ -1,0 +1,23 @@
+[project]
+name = "Irisbond2Tolt"
+description = "Adds support for the Irisbond Hiro eye tracker to the Tolt Ability Drive system."
+onboarding = """
+Welcome to the Irisbond2Tolt project!
+
+This tool integrates the Irisbond Hiro eye tracker with the Tolt Ability Drive system, enabling users to control the system using eye-tracking technology.
+
+## Getting Started
+
+1. Clone the repository.
+2. Follow the setup instructions in the README to install dependencies and configure the environment.
+3. Refer to the `docs/` directory for integration details and API documentation.
+
+## Contribution Guidelines
+
+- Please follow the coding standards outlined in the CONTRIBUTING.md file.
+- Submit issues and pull requests for any bugs or feature requests.
+
+## Support
+
+For questions or support, contact the maintainers or open an issue on GitHub.
+""" 
